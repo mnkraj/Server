@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../Db");
+const {db} = require("../Db");
 
 router.post("/add_property_details", async (req, res) => {
   let {

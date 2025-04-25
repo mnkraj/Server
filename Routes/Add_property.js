@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../Db");
+const {db} = require("../Db");
 
 router.post('/add_property', async (req, res) => {
   let { prop_id,seller_id,sell_price,upload_date,status } = req.body;
